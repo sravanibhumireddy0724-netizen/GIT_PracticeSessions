@@ -54,7 +54,7 @@ pipeline {
             steps {
                 echo 'Installing Node/Playwright dependencies...'
                 dir('qa-tests') {
-                    bat 'npm ci'
+                    bat 'npm install'
                     bat 'npx playwright install'
                 }
             }
